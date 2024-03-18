@@ -1,0 +1,1 @@
+Authentication sisteminin tamami once clerk'e verilmistir ancak sonrasinda mongodb database ile sync edilecektir.

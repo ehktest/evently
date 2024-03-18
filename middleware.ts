@@ -38,19 +38,19 @@ export default authMiddleware({
   publicRoutes: [
     "/",
     "/events/:id",
-    "/api/webhook/clerk",
-    "/api/webhook/stripe",
+    "/api/webhooks/clerk",
+    "/api/webhooks/stripe",
     "/api/uploadthing",
   ],
   // Routes that can always be accessed, and have
   // no authentication information
   // ignoredRoutes: ["/no-auth-in-this-route"],
-  // ignoredRoutes: [
-  //   "/",
-  //   "/api/webhook/clerk",
-  //   "/api/webhook/stripe",
-  //   "/api/uploadthing",
-  // ],
+  ignoredRoutes: [
+    "/",
+    "/api/webhooks/clerk",
+    "/api/webhooks/stripe",
+    "/api/uploadthing",
+  ],
 });
 
 // import { NextResponse } from "next/server";

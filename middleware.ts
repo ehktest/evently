@@ -46,7 +46,6 @@ export default authMiddleware({
   // no authentication information
   // ignoredRoutes: ["/no-auth-in-this-route"],
   ignoredRoutes: [
-    "/",
     "/api/webhooks/clerk",
     "/api/webhooks/stripe",
     "/api/uploadthing",
